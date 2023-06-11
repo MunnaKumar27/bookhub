@@ -21,6 +21,7 @@ const BookDetails = () => {
         const response = await fetch(`${URL}${id}.json`);
         const data = await response.json();
         console.log(data);
+        // referrerPolicy: "unsafe_url";
 
         if(data){
           const {description, title, covers, subject_places, subject_times, subjects} = data;
